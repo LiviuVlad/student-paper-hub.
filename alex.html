@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="uk" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Paper Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .parallax-bg {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    /* Базовая видимость плавающих кнопок */
+    .social-floating {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    .social-floating.visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    /* На телефонах всегда показываем */
+    @media (max-width: 768px) {
+      .social-floating {
+        opacity: 1 !important;
+        pointer-events: auto !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-blue-50 via-blue-100 to-white text-gray-800">
+
+  <!-- Hero Section -->
+  <header class="relative text-white text-center py-24 sm:py-32 shadow-2xl parallax-bg"
+    style="background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1920&q=80');"
+    data-aos="fade-down">
+    <div class="absolute inset-0 bg-blue-900/60"></div>
+    <div class="relative z-10 px-4" data-aos="fade-up" data-aos-delay="200">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight leading-tight">
+        Student Paper Hub
+      </h1>
+      <p class="max-w-2xl mx-auto text-base sm:text-lg md:text-xl leading-relaxed opacity-90">
+        Платформа №1 у сфері студентського фрилансу. Професійні автори, індивідуальний підхід, гарантований результат.
+      </p>
+      <a href="#services"
+         class="mt-8 inline-block bg-blue-700 text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-full shadow-lg hover:scale-105 hover:bg-blue-800 transition transform"
+         data-aos="fade-up" data-aos-delay="400">
+        Дізнатися більше
+      </a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <main>
+    <section class="max-w-4xl mx-auto py-16 sm:py-20 px-4 text-center" data-aos="fade-up">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 text-blue-700">Про нас</h2>
+      <p class="text-base sm:text-lg leading-relaxed text-gray-700 bg-white/70 backdrop-blur-md p-4 sm:p-6 rounded-2xl shadow-lg">
+        Наша мета – допомогти студентам досягти успіху у навчанні, надаючи їм індивідуально підготовлені роботи.
+        Гарантуємо оригінальність, своєчасність та найвищу якість кожного замовлення.
+      </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 sm:py-20 px-4 bg-gradient-to-br from-blue-100 via-blue-50 to-white scroll-mt-28">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-10 text-blue-800" data-aos="fade-up">Наші послуги</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="100">
+            <h3 class="font-bold text-lg sm:text-xl mb-3 text-blue-700">Написання робіт</h3>
+            <p class="text-gray-600">Есе, курсові та дипломні роботи на замовлення.</p>
+          </div>
+          <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="200">
+            <h3 class="font-bold text-lg sm:text-xl mb-3 text-blue-700">Реферати та статті</h3>
+            <p class="text-gray-600">Допомога з рефератами та науковими статтями.</p>
+          </div>
+          <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="300">
+            <h3 class="font-bold text-lg sm:text-xl mb-3 text-blue-700">Редагування</h3>
+            <p class="text-gray-600">Коректура та редагування текстів.</p>
+          </div>
+          <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="400">
+            <h3 class="font-bold text-lg sm:text-xl mb-3 text-blue-700">Консультації</h3>
+            <p class="text-gray-600">Індивідуальні консультації з академічного письма.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="relative py-16 sm:py-20 px-4 parallax-bg"
+      style="background-image: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1920&q=80'); background-attachment: fixed;">
+      <div class="absolute inset-0 bg-blue-900/70"></div>
+      <div class="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-4 sm:gap-6 text-center text-white" data-aos="fade-up">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-8 col-span-full">Чому ми?</h2>
+        <div class="bg-white/10 backdrop-blur-md p-4 sm:p-6 rounded-2xl shadow-md text-base sm:text-lg" data-aos="fade-up" data-aos-delay="100">Ми працюємо понад 4 роки та гарантуємо високу якість кожної роботи.</div>
+        <div class="bg-white/10 backdrop-blur-md p-4 sm:p-6 rounded-2xl shadow-md text-base sm:text-lg" data-aos="fade-up" data-aos-delay="200">Допомагаємо студентам з різних дисциплін і тем.</div>
+        <div class="bg-white/10 backdrop-blur-md p-4 sm:p-6 rounded-2xl shadow-md text-base sm:text-lg" data-aos="fade-up" data-aos-delay="300">Кожна робота унікальна та перевірена на плагіат.</div>
+        <div class="bg-white/10 backdrop-blur-md p-4 sm:p-6 rounded-2xl shadow-md text-base sm:text-lg" data-aos="fade-up" data-aos-delay="400">Дотримуємось усіх дедлайнів та працюємо швидко.</div>
+        <div class="bg-white/10 backdrop-blur-md p-4 sm:p-6 rounded-2xl shadow-md text-base sm:text-lg" data-aos="fade-up" data-aos-delay="500">Підтримуємо вас на всіх етапах виконання замовлення.</div>
+      </div>
+      <div class="relative text-center mt-8 sm:mt-10">
+        <a href="#contact" class="inline-block bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-bold px-5 sm:px-6 py-3 rounded-full shadow-lg hover:scale-105 transition transform">
+          Зробити замовлення
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 sm:py-20 px-4 bg-gradient-to-br from-blue-100 to-white">
+      <div class="max-w-3xl mx-auto text-center bg-white/80 backdrop-blur-md p-6 sm:p-8 rounded-3xl shadow-xl" data-aos="fade-up">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 sm:mb-8 text-blue-700">Зв'яжіться з нами</h2>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="grid grid-cols-1 gap-3 sm:gap-4 text-left">
+          <input type="text" name="name" placeholder="Ваше ім'я" class="p-3 sm:p-4 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-500 w-full" required autofocus>
+          <input type="email" name="email" placeholder="Ваш Email" class="p-3 sm:p-4 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-500 w-full" required>
+          <textarea name="message" placeholder="Ваше повідомлення" class="p-3 sm:p-4 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-500 w-full" rows="4" required></textarea>
+          <button type="submit" class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-bold px-5 sm:px-6 py-3 sm:py-4 rounded-full shadow-lg hover:scale-105 transition transform">Надіслати</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-gray-300 text-center py-6 text-sm">
+    © 2025 Student Paper Hub. Усі права захищені.
+  </footer>
+
+  <!-- Floating Social Buttons -->
+  <div id="social-floating" class="social-floating fixed bottom-4 right-4 flex flex-col gap-3 z-50">
+    <a href="https://t.me/liviuvlad" target="_blank" rel="noopener noreferrer" aria-label="Telegram"
+       class="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-full shadow-lg transition transform hover:scale-110">
+      <!-- Telegram Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M21.75 3.94L18.44 20.3c-.18.88-1.16 1.3-1.92.82l-4.24-2.82-2.05 2.06a.75.75 0 01-1.28-.38l-.66-3.9-3.62-1.45c-.84-.33-.8-1.54.06-1.78L20.7 3.2a.75.75 0 011.05.74z" />
+      </svg>
+    </a>
+    <a href="https://www.instagram.com/alex_l_vlad?igsh=MTAwYm1sYmRpc25jeQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+       class="bg-pink-500 hover:bg-pink-600 text-white p-3 rounded-full shadow-lg transition transform hover:scale-110">
+      <!-- Instagram Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm8.25 4.5a.75.75 0 100 1.5.75.75 0 000-1.5zM12 8.75A3.25 3.25 0 1112 15a3.25 3.25 0 010-6.25z" />
+      </svg>
+    </a>
+  </div>
+
+  <script>
+    AOS.init({ duration: 900, once: true });
+
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const targetId = a.getAttribute('href');
+        if (targetId.length > 1) {
+          const el = document.querySelector(targetId);
+          if (el) {
+            e.preventDefault();
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      });
+    });
+
+    const floatingButtons = document.getElementById('social-floating');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 150) {
+        floatingButtons.classList.add('visible');
+      } else {
+        floatingButtons.classList.remove('visible');
+      }
+    });
+  </script>
+</body>
+</html>
